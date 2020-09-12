@@ -1,9 +1,9 @@
 module.exports = {
   plugins: [
     'tailwindcss',
-    'postcss-flexbugs-fixes',
+    'postcss-flexbugs-fixes',  
     [
-      'postcss-preset-env',
+      'postcss-preset-env', 
       {
         autoprefixer: {
           flexbox: 'no-2009',
