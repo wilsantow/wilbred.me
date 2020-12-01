@@ -16,7 +16,7 @@ export default function blog({ children, frontMatter }) {
           </a>
         </Link>
       </div>
-      <div className="  mx-auto  prose sm:prose-xl px-4 py-6 ">
+      <div className="mx-auto  prose sm:prose-lg px-4 py-6 ">
         <MDXProvider>{children}</MDXProvider>
       </div>
     </div>

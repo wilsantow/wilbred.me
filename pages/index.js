@@ -12,7 +12,7 @@ export default function IndexPage() {
         />
       </Head>
       <div className=" text-center ">
-        <section className=" p-1 inline-block b mx-auto text-lg  text-left sm:text-xl">
+        <section className=" p-1  inline-block b mx-auto text-lg   text-left sm:text-xl">
           <h1 className="text-3xl sm:text-5xl">
             Hello,I'm
             <br className="sm:hidden" />

@@ -1,0 +1,114 @@
+---
+title: "How Tailwind CSS helped me as a beginner?"
+description: 'Tailwind CSS is a "utility first" CSS framework. it does not provide components like buttons or forms for us to use. Instead, it provides utility classes for almost all of the CSS properties and allows us to create custom designs using those classes.'
+date: "12-09-2020"
+layout: "blog"
+---
+
+## How Tailwind CSS helped me as a beginner?
+
+<div className="bg-red-300">
+  <img src="/img/blogs/Tailwind-Flexibility.jpg" className="" />
+</div>
+
+- CSS is hard
+- CSS frameworks
+- Problems I had with Bulma and Bootstrap
+- Tailwind CSS
+- Features I like in Tailwind CSS
+- Final thoughts
+
+### CSS is hard
+
+When I started learning web development. I had a hard time understanding CSS. While working on my first side project, I was not able to convert the design I had into CSS code. After spending a lot of time, I felt frustrated and gave up.
+
+From not understanding the behaviors of the properties to not knowing how to decide upon values for width, height, padding, etc., I felt CSS more hard and confusing even compared to general-purpose programming languages.
+
+### CSS frameworks
+
+Then, I came to know about the world of CSS frameworks and used [Bulma](https://bulma.io/) for the project I left unfinished. The development process was much easier compared to CSS. Then, I also started exploring [Bootstrap](https://getbootstrap.com/) which is another popular CSS framework.
+
+Using CSS frameworks saved a lot of time from writing CSS properties. frameworks provide classes for different components like buttons, forms, Navbar, etc. we can make use of these classes in the HTML itself to create a responsive design easily.
+
+### Problems I had with Bulma and Bootstrap
+
+After using Bulma and Bootstrap for some time, I again felt the need for some other option. Because, even though these frameworks provide nice responsive components, we still have to write CSS to modify any of the default styles of these components.
+
+For eg, In Bootstrap we create a button like this,
+
+```HTML
+<button type="button" class="btn btn-primary">Click here</button>
+```
+
+We make use of `btn` class provided by Bootstrap. Bootstrap provides classes for nine different styles of buttons (primary, secondary, danger, link, etc..). These buttons have their own styles like color, padding, etc. If we need to apply different styles other than these for our button, we need to create a new CSS class with our custom styles and use them in the HTML. This became a tedious task when I did a lot of customizations because I ended up writing more CSS than I thought.
+
+So, I was looking for an option that would fit in between CSS and CSS frameworks like Bootstrap in terms of the flexibility. That's How I found Tailwind CSS.
+
+### Tailwind CSS
+
+<div className="">
+  <img src="/img/blogs/TailwindCSS.png" className="" />
+</div>
+
+[Tailwind CSS](https://tailwindcss.com/) is a "utility first" CSS framework. it does not provide components like buttons or forms for us to use. Instead, it provides utility classes for almost all of the CSS properties and allows us to create custom designs using those classes without even writing a single line of CSS. We can even design a complete site without ever leaving HTML using Tailwind CSS.
+
+In Tailwind , we create a button like this
+
+```HTML
+<button type="button" class="bg-blue-300 rounded-md px-2 py-1">Click here</button>
+```
+
+Here each class applies individual CSS properties, so we can customize the design however we need by changing the class names.
+For example,
+
+- To change the background color of the button to black, we remove the class `bg-blue-300` and add `bg-black`.
+- To remove padding to the left and right of the button ,we remove `px-2`.
+
+### Features I like in Tailwind CSS
+
+#### 1. Utilily classes
+
+Tailwind CSS provides a large number of utility classes that can be used instead of CSS properties. So, you can even style the elements without writing CSS code. The development build of tailwind is huge (around 3MB) because of the large number of utility classes. But when building for production, we can remove the unused classes which will greatly reduce the build size
+
+#### 2. IntelliSense (plugin)
+
+This is the most useful feature for me. If you are using [Visual Studio Code](https://code.visualstudio.com/), you can use the [tailwind intelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) plugin which will show the corresponding CSS property of the tailwind class on hover. One of the problems I Had while learning CSS was, I never understood the behavior of most of the properties. I used to constantly change a property or its value and see the browser to understand its behavior. But it took too much time to change the property every time, So I gave up on that method after a while.
+
+When I started using tailwind, I never understood CSS completely, but I constantly changed the class names to understand its behavior. because it was way much faster to change the name of a class within the HTML than to change the property in the CSS file every time. Adding to that, when IntelliSense shows the corresponding CSS property I understood CSS properties better.
+
+#### 3. Spacing and Colors
+
+Another problem I had initially with CSS was deciding upon which color to use for text, buttons, backgrounds and how much spacing should I use for margins, borders, width, height, etc to maintain a consistent design throughout the site.
+
+An experienced developer or a designer will know how to choose the right value or they might have a design system, But as a beginner, I wanted a default color palette and a spacing scale which should work well. Tailwind CSS was proven to be a great choice as it provides 10 different shades of all primary colors and a proportional spacing scale.
+
+#### 4. Customization
+
+The color palette, spacing scale, fonts and much more provided by the default Tailwind Theme will work well. But, we can also create a custom theme by extending or overriding the default theme in the `tailwind.config.js` file.
+
+#### 5. Tailwind typography(plugin)
+
+Browsers apply a default set of styles to HTML elements like `p`, `h1`..`h6`, `li`, `img` and so on. Tailwind CSS removes these default styles.
+
+For instance,
+
+- Paragraphs and Headings from h1 - h6 are of the same font size and unstyled.
+- List elements are unstyled.
+
+This allows us to use our own styles without worrying about how the default styles applied by the Browsers will affect the design. It also helps in maintaining a uniform design by preventing us from not using any value other than values in our spacing scale.
+
+But, if you are writing a blog or just any long piece of text, you probably would need most of these elements. If you find it hard to use Tailwind's utility classes to style these HTML elements yourself. Tailwind CSS provides a plugin called **[Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)** which contains a class named prose. It has nice default styles for all the elements that are needed to write a blog or any type of document. You can just use the `prose` class instead of styling using utility classes.
+
+### Final thoughts
+
+Some people consider using Tailwind CSS as a bad practice and not suitable for larger projects. But, It was really helpful for me as a non-designer while working on smaller projects.
+
+So, If you are not primarily a designer or a beginner having trouble working with CSS, Tailwind CSS will be a perfect choice. Because, with the help of a large number of utility classes and the default theme provided, you can create a consistent design without writing much CSS. The development process is also much faster with Tailwind CSS.
+
+---
+
+### Resources
+
+- [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind typography](https://github.com/tailwindlabs/tailwindcss-typography)
+- [Tailwind typography - demo](https://tailwindcss-typography.netlify.app/)

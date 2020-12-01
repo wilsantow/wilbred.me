@@ -1,6 +1,6 @@
-// import { frontMatter as first } from "../pages/blogs/first.mdx";
-// import { frontMatter as second } from "../pages/blogs/second.mdx";
+import { frontMatter as Tailwind } from "../pages/blogs/How-Tailwind-CSS-helped-me-as-a-beginner.mdx";
 
-// export const BlogList = [first,second];
 
-// // console.log(first._resourcePath)
+export const BlogList = [Tailwind];
+
+// console.log(first._resourcePath)
