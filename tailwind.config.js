@@ -1,12 +1,17 @@
 typography = require("@tailwindcss/typography");
 
+const base="text-code-";
+
 module.exports = {
-  purge: [
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./layouts/*.{js,ts,jsx,tsx}",
-    "./next.config.js",
-  ],
+  purge: {
+    content:[ "./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}",
+    "./layouts/*.{js,ts,jsx,tsx}"],
+   
+  // These options are passed through directly to PurgeCSS
+  options:{
+    whitelist: ['text-code-red','text-code-yellow','text-code-green','text-code-white','text-code-purple','text-code-blue','text-gray-400','italic'],
+}
+},
   theme: {
     extend: {
       colors: {
