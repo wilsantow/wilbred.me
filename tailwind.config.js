@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./layouts/*.{js,ts,jsx,tsx}",
+    "next.config.js",
   ],
   theme: {
     extend: {
