@@ -13,7 +13,7 @@ export default function Blogcard(props) {
             <a>{props.title}</a>
           </Link>
         </h2>
-        <p className=" mt-4 sm:mt-0 text-gray-800 ">{props.description}</p>
+        <p className=" mt-4 text-gray-800 ">{props.description}</p>
         <p className=" mt-2 text-blue-600 ">
           <Link href={props.path}>
             <a>Read more &rarr;</a>
