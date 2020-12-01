@@ -8,7 +8,7 @@ export default function Blogcard(props) {
         <time className=" text-gray-600  font-medium  px-2">{props.date}</time>
       </div>
       <div className="  px-2  sm:w-4/6">
-        <h2 className="  text-xl font-bold ">
+        <h2 className="  text-2xl font-bold ">
           <Link href={props.path}>
             <a>{props.title}</a>
           </Link>
