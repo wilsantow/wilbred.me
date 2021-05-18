@@ -13,8 +13,8 @@ export default function contact() {
         </h1>
 
         <p className="mt-6 text-2xl sm:text-3xl  tracking-tight leading-tight text-gray-700">
-          If you want to hire me,<br className="sm:hidden"></br>collaborate on a
-          project or <br></br>
+           I am not looking for any new opportunities.<br ></br>But, if you want to discuss any project
+          or <br></br>
           just say hello,
         </p>
         <button className="bg-blue-300 text-blue-800  font-bold   px-4 py-2 rounded-lg shadow-md  focus:outline-none mt-6 mr-auto">
