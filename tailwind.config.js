@@ -1,5 +1,6 @@
 typography = require("@tailwindcss/typography");
 
+const base="text-code-";
 
 module.exports = {
   purge: {
