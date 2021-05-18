@@ -8,7 +8,7 @@ export default function IndexPage() {
         <title>Wilbred Anto | Software Engineer </title>
         <meta
           name="description"
-          content="Software Engineer based in Tamil Nadu, India currently working at Uniphore. Portfolio containing my works and Blogs."
+          content="Software Engineering student based in Tamil Nadu, India. Portfolio containing my works and Blogs. Currently in the final year of my undergraduate degree."
         />
       </Head>
       <div className=" text-center ">
@@ -19,7 +19,7 @@ export default function IndexPage() {
             <span className="font-bold"> Wilbred Anto</span>.
           </h1>
           <h1 className="mt-2 tracking-tight leading-snug text-gray-800 text-lg sm:text-2xl">
-            I am a Software Engineer based in Tamil Nadu, India currently working at <a className="underline text-blue-600 font-bold" href="https://www.uniphore.com/">Uniphore</a>.
+            I am a Software Engineering Undergraduate Student based in India.
           </h1>
           <div className="flex justify-center mt-8">
             <Link href="/portfolio">
@@ -38,7 +38,7 @@ export default function IndexPage() {
             </Link>
           </div>
           <h1 className="mt-16 tracking-tight leading-tight text-gray-800 sm:text-2xl">
-          If you want to have a conversation,
+            Available for Internship and Full time position.
           </h1>
           <div className=" mt-2 flex justify-start">
             <Link href="/contact">
